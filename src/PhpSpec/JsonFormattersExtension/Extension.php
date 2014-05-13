@@ -19,19 +19,8 @@ class Extension implements ExtensionInterface
      */
     public function load(ServiceContainer $container)
     {
-        $this->addFormatter($container, 'cat', 'PhpSpec\JsonFormattersExtension\Formatter\JsonFormatter');
-    }
-
-    /**
-     * Add a formatter to the service container
-     *
-     * @param ServiceContainer $container
-     * @param string           $name
-     * @param string           $class
-     */
-    protected function addFormatter(ServiceContainer $container, $name, $class)
-    {
-        $container->set('formatter.formatters.Json.' . $name, function ($c) use ($class) {
+        $class = 'PhpSpec\JsonFormattersExtension\Formatter\JsonFormatter';
+        $container->set('formatter.formatters.json', function ($c) use ($class) {
             /** @var ServiceContainer $c */
             return new $class(
                 $c->get('formatter.presenter'),
