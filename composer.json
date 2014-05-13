@@ -1,0 +1,28 @@
+{
+    "name": "phpspec/json-formatters",
+    "description": "PHPSpec JSON Formatter Extension",
+    "type": "extension",
+    "keywords": ["phpspec", "json"],
+    "homepage": "https://github.com/fmd/phpspec-json-formatters",
+    "license": "MIT",
+    "require": {
+        "php": ">=5.3.3",
+        "phpspec/phpspec": "2.0.*@dev",
+    },
+    "autoload": {
+        "psr-0": {
+            "PhpSpec\\JsonFormattersExtension": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Fareed Dudhia",
+            "email": "fareeddudhia@gmail.com"
+        }
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
