@@ -3,7 +3,7 @@
     "description": "PHPSpec JSON Formatter Extension",
     "type": "extension",
     "keywords": ["phpspec", "json"],
-    "homepage": "https://github.com/fmd/phpspec-json-formatters",
+    "homepage": "https://github.com/fmd/phpspec-json-formatter",
     "license": "MIT",
     "require": {
         "php": ">=5.3.3",
